@@ -11,8 +11,7 @@ const App = () => {
     <>
     <Header/>
     <Maincard/>
-    <Display/>
-    <Footer/>
+ 
     
     
     </>
