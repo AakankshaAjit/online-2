@@ -9,22 +9,19 @@ const Maincard = () => {
 
 const [AllCards,SetALlCards] = useState([])
 const [Loader,SetLoader] = useState(false)
-
-
-
 const FetchMyData=async()=>{
-
-
-
   SetLoader(true)
 
-Axios.get('https://dummyjson.com/products')
+  
+
+ await Axios.get('https://dummyjson.com/products')
 .then((res)=>{
   SetALlCards(res.data.products)
-
 }).catch((err)=>{
 console.log(err)
 })
+
+
 SetLoader(false)
 
 }
